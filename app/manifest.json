@@ -9,11 +9,6 @@
     "16": "images/icon-16.png",
     "96": "images/icon-96.png"
   },
-/*  "background": {
-    "scripts": [
-      "scripts/background.js"
-    ]
-  },*/
   "browser_action": {
     "default_icon": {
       "16": "images/icon-16.png",
@@ -23,7 +18,7 @@
     "default_popup": "pages/popup.html"
   },
   "content_scripts": [
-    {// Injects Jasmine code on Grow pages globally
+    {
       "matches": ["https://grow.liferay.com/*"],
       "css": ["styles/jasmine.css"],
       "js" : [
@@ -33,6 +28,12 @@
         "libs/jquery-1.7.2.min.js",
         "libs/jasmine-jquery.js"
       ],
+      "run_at": "document_end",
+      "all_frames": false
+    },
+    {
+      "matches": ["https://grow.liferay.com/web/*"],
+      "js" : ["tests/user-profile-theme-tests.js"],
       "run_at": "document_end",
       "all_frames": false
     }
