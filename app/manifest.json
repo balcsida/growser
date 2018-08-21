@@ -33,9 +33,7 @@
     },
     {
       "matches": ["https://grow.liferay.com/web/*"],
-      "js" : ["tests/user-profile-theme-tests.js"],
-      "run_at": "document_end",
-      "all_frames": false
+      "js" : ["tests/user-profile-theme-tests.js"]
     }
   ],
   "permissions": [
