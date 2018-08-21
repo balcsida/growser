@@ -1,13 +1,13 @@
 {
-  "name": "__MSG_appName__",
-  "short_name": "__MSG_appShortName__",
-  "description": "__MSG_appDescription__",
-  "version": "0.0.0",
+  "name": "Growser",
+  "short_name": "Growser",
+  "description": "A browser plugin that injects and runs Jasmine tests into a Liferay DXP web site",
+  "version": "1.0.0",
   "manifest_version": 2,
   "default_locale": "en",
   "icons": {
     "16": "images/icon-16.png",
-    "128": "images/icon-128.png"
+    "96": "images/icon-96.png"
   },
   "background": {
     "scripts": [
@@ -16,8 +16,8 @@
   },
   "browser_action": {
     "default_icon": {
-      "19": "images/icon-19.png",
-      "38": "images/icon-38.png"
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png"
     },
     "default_title": "__MSG_browserActionTitle__",
     "default_popup": "pages/popup.html"
