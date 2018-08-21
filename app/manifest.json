@@ -23,16 +23,15 @@
     "default_popup": "pages/popup.html"
   },
   "content_scripts": [
-    {
-      "matches": [
-        "http://*/*",
-        "https://*/*"
-      ],
-      "css": [
-        "styles/contentscript.css"
-      ],
-      "js": [
-        "scripts/contentscript.js"
+    {// Injects Jasmine code on Grow pages globally
+      "matches": ["https://grow.liferay.com/*"],
+      "css": ["styles/jasmine.css"],
+      "js" : [
+        "libs/jasmine.js",
+        "libs/jasmine-html.js",
+        "libs/boot.js",
+        "libs/jquery-1.7.2.min.js",
+        "libs/jasmine-jquery.js"
       ],
       "run_at": "document_end",
       "all_frames": false
