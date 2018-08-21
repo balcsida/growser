@@ -1,0 +1,12 @@
+{
+  "name": "growser",
+  "version": "0.0.1",
+  "description": "A browser plugin that injects and runs Jasmine tests into a Liferay DXP web site",
+  "scripts": {
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build"
+  },
+  "devDependencies": {
+    "webextension-toolbox": "latest"
+  }
+}
